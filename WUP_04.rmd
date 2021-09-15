@@ -60,7 +60,15 @@ model1 <- aov(WORDSUM~DEGREE,data=mydata)
 summary.aov(model1)
 ```
  As we can see the null hypothesis is proved true while we have the P value that is pretty small. The P value also represents an chance of getting the result of something pretty far.
+ 
+```{r}
+#we specify the margins starting at the bottom and proceeding clockwise - thus 8.7 is the left side margin to hold the names of the factors
+par(mar = c(3, 8.7, 2, 2))
+plot(TukeyHSD(model1,las=2,conf.level=.95,las=2)) 
+```
 
+  Plot shows a big difference in each academic level like how High school and graduate are different from each other while LT and High school and Graduate are completely different from each other as well. Each confidence level is listed higher than the next but aren't on the same track of each other. The plot also shows that LT High school, graduate, and High school graduate don't hit the "0" line.
+  
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
