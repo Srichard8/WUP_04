@@ -72,3 +72,5 @@ plot(TukeyHSD(model1,las=2,conf.level=.95,las=2))
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variables causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+  While doing each plot we discussed each meaning of the plots as well as the scores of each school. We have individuals with a graduate, bachelor degree, and a junior college degree scored better then individuals (LT High school and High school category).The people who attended and the means of that as well as the people who attended college and had a mean value of 9 or greater, while the LT High school and High school students had a mean value of 8 or less. Lastly, we used the "TukeyHSD" model and more. We were able to elaborate further that 95% confidence level LT High school graduate categories did not go over the "0". In conclusion, each plot represented something different percent and level wise.
